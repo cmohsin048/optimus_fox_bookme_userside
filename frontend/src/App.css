@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  color: var(--gray-500);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  overflow-x: inherit;
+  overflow-y: inherit !important;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #e4e7ec;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.login {
+  color: #667085;
+  font-weight: 500;
+  margin: 0 1rem 0 1rem;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+}
+
+.signup {
+  background: #1476d1;
+  border: #1476d1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px #1018280d;
+  padding: 10.5px 18px;
+}
+
+.Booking {
+  display: flex;
+  flex-direction: column;
+  background-color: #1476d1;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  /* max-width: 1240px; */
+}
+
+.Booking .h {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #e4e7ec;
+  margin: 0;
+  padding: 0;
+}
+
+.Booking p {
+  color: #e4e7ec;
+  font-size: 1.25rem;
+}
+
+.ways {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px 20px 0px;
+  gap: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-label {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="radio"]:checked + .radio-label {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.Travel-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  font-size: 16px;
+  max-width: 250px;
+  min-width: 100px;
+  padding: 12px 20px 12px 15px;
+}
+.search-input:focus {
+  outline: #fff;
+}
+.search-input .MuiInputLabel-root {
+  color: black;
+}
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  height: 100%;
+}
+.search-input .MuiInputLabel-root.Mui-focused {
+  color: white;
+  display: none;
+}
+
+.List {
+  border: 1px solid #ddd;
+  background-color: white;
+  padding: 12px;
+  font-size: 18px;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.first-item {
+  margin-top: 0;
+  gap: 10px;
+}
+
+.List:not(.first-item) {
+  margin-top: -1px;
+}
+
+.List:hover {
+  background-color: #eee;
+}
+.dropdown {
+  height: 300px;
+  overflow: auto;
+  position: absolute;
+  min-width: inherit;
+  z-index: 100 !important;
+}
+/* .search-dropdown {
+  max-width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+} */
+/* Date picker container styles */
+.date-input-container {
+  margin-bottom: 15px;
+}
+
+/* Override MUI default TextField styles if needed */
+.MuiTextField-root {
+  width: 100%;
+}
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+
+  gap: 5px;
+}
+.search-button button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 7px;
+  background-color: #fec84b;
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.search-button button svg {
+  vertical-align: center;
+}
+/* General Card Styles */
+.detail-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+  padding: 10px;
+}
+.detail-card {
+  color: #101828;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.details {
+  display: flex;
+  border-top: 1px solid #d0d4dd;
+  border-bottom: 1px solid #d0d4dd;
+
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.tf {
+  display: flex;
+  gap: 10px;
+}
+.ts {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: end;
+}
+.fb {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 20px;
+}
+@media (max-width: 850px) {
+  .Travel-input {
+    flex-direction: column;
+  }
+  .search-dropdown {
+    max-width: 100%;
+  }
+  .details {
+    padding: 15px;
+  }
+}
+@media (max-width: 500) {
+  .details {
+    padding: 0px;
+  }
+}
